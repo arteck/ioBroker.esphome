@@ -465,7 +465,9 @@ class Esphome extends utils.Adapter {
 							name: (this.config.useName ? deviceInfo.friendlyName : deviceInfo.name),
 							statusStates: {
 								onlineId: `${this.namespace}.${deviceName}.info._online`
-							}
+							},
+							//@ts-ignore js-controller issue erstellt
+							desc: deviceInfo.friendlyName,
 						},
 						native: {
 							ip: host,
