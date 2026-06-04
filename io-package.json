@@ -1,101 +1,100 @@
 {
   "common": {
     "name": "esphome",
-    "version": "0.6.1",
+    "version": "0.7.0-beta.4",
     "news": {
-      "0.6.1": {
-        "en": "Update esphome\nOptimize admin configuration interface\nOptimize backend handling of device discovery\nCapability to select ESPHome Dashboard version added, resolves #118",
-        "de": "Update esphome\nOptimieren der Admin-Konfigurationsschnittstelle\nOptimieren Sie das Backend-Handling der Geräteentdeckung\nMöglichkeit, ESPHome Dashboard-Version hinzugefügt zu wählen, löst #118",
-        "ru": "Обновление esphome\nОптимизируйте интерфейс конфигурации admin\nОптимизируйте обратную обработку обнаружения устройства\nВозможность выбора добавленной версии ESPHome Dashboard, решает #118",
-        "pt": "Atualizar esphome\nOtimizar a interface de configuração de administrador\nOtimizar o manuseio de backend da descoberta do dispositivo\nCapacidade de selecionar ESPHome Dashboard versão adicionada, resolve #118",
-        "nl": "Esphome bijwerken\nAdmin configuratie interface optimaliseren\nOptimaliseer backend behandeling van apparaatontdekking\nMogelijkheid om ESPHome Dashboard versie toegevoegd te selecteren, lost #118 op",
-        "fr": "Mettre à jour l'esphome\nOptimiser l'interface de configuration de l'administration\nOptimiser la gestion du moteur de la découverte de l'appareil\nCapacité de sélectionner la version ESPHome Dashboard ajoutée, résout #118",
-        "it": "Aggiornamento esphome\nOttimizzare l'interfaccia di configurazione di amministratore\nOttimizzare la gestione backend della scoperta del dispositivo\nCapacità di selezionare la versione di ESPHome Dashboard aggiunta, risolve #118",
-        "es": "Actualizar esphome\nOptimize admin configuración interface\nOptimize backend handling of device discovery\nCapacidad para seleccionar la versión ESPHome Dashboard añadido, resuelve #118",
-        "pl": "Uaktualnij esphome\nOptymalizacja interfejsu konfiguracyjnego administratora\nOptymalizacja obsługi urządzenia\nMożliwość wyboru wersji ESPHome Dashboard dodano, rozwiązuje # 118",
-        "uk": "Оновлення esphome\nОптимальний інтерфейс конфігурації адміністратора\nОптимізуйте зворотну обробку пристрою\nМожливість вибору ESPHome Dashboard додано, вирішує #118",
-        "zh-cn": "更新 esphome\n优化管理员配置接口\n优化设备发现的后端处理\n选择 ESPHome Dashboard 版本的能力已添加, 解决 # 118"
+      "0.7.0-beta.4": {
+        "en": "**FIXED**: ESLint errors by code refactoring\n**FIXED**: Restore missing `configStates` option in admin UI to allow configuring whether configuration states are shown per entity",
+        "de": "**FIXED**: ESLint-Fehler durch Code-Refactoring\n**FIXED**: Wiederherstellen fehlender `configStates` Option im Admin UI, um die Konfiguration zu ermöglichen, ob Konfigurationszustände pro Einheit angezeigt werden",
+        "ru": "**FIXED**: ошибки ESLint при рефакторинге кода\n**FIXED**: Восстановление отсутствующей опции «configStates» в пользовательском интерфейсе администратора, чтобы позволить настроить, отображаются ли состояния конфигурации на единицу",
+        "pt": "**FIXED**: ESLint errors by code refatoring\n**FIXED**: Restaurar a opção 'configStates' faltando na interface de administração para permitir configurar se os estados de configuração são mostrados por entidade",
+        "nl": "** VAST**: ESLint fouten door code refactoring\n**FIXED**: Herstellen van ontbrekende optie \"configStates\" in admin UI om het configureren van configuratietoestanden per entiteit mogelijk te maken",
+        "fr": "**FIXED**: erreurs ESLint par refactoring de code\n**FIXED**: Restaurer l'option `configStates` manquante dans l'interface utilisateur admin pour permettre de configurer si les états de configuration sont affichés par entité",
+        "it": "**FIXED**: Errori ESLint per refactoring del codice\n**FIXED**: Ripristina l'opzione `configStates` mancante nell'interfaccia utente di amministrazione per consentire la configurazione se gli stati di configurazione vengono visualizzati per entità",
+        "es": "**FIXED**: errores ESLint por refactorización de código\n**FIXED**: Restaurar la opción 'configStates' desaparecida en admin UI para permitir configurar si los estados de configuración se muestran por entidad",
+        "pl": "* *FIXED* *: Błędy związane z plikiem ESLint przy pomocy refaktoringu kodu \n* *FIXED* *: Przywracanie brakującej opcji 'configStates' w systemie UI administratora, aby umożliwić konfigurację tego, czy stany konfiguracji są wyświetlane na jednostkę ",
+        "uk": "**FIXED***: помилки ESLint від рефакторингу коду\n**FIXED***: Відновити варіант `configStates` в admin UI, щоб дозволити налаштування станів конфігурації відображається на суб’єкті",
+        "zh-cn": "**FIXED**:通过代码重构的ESLint错误\n** FIXED**:在管理UI中恢复缺失的“配置状态”选项,以便配置是否显示每个实体的配置状态"
       },
-      "0.5.0-beta.8": {
-        "en": "Capability to automatically detect new devices added\nEnsures a compatible pillow version is used (10.0.1)\nAdd pillow python package by default, resolves #188",
-        "de": "Möglichkeit, neue Geräte automatisch zu erkennen\nSicherstellen das Pillow version (10.0.1) verwendet wird\nFügen Sie Kissen-Python-Paket standardmäßig hinzu, löst #188",
-        "ru": "Возможность автоматического обнаружения добавленных устройств\nОбеспечивает совместимую версию подушки используется (10.0.1)\nДобавьте пакет python подушки по умолчанию, решает #188",
-        "pt": "Capacidade de detectar automaticamente novos dispositivos adicionados\nGarante uma versão de travesseiro compatível é usada (10.0.1)\nAdicionar pacote python travesseiro por padrão, resolve #188",
-        "nl": "Funktionaliteit om automatisch nieuwe apparaten te detecteren\nZekerstellen dat Pillow versie 10.0.1 gebruikt wordt\nAdd kussen python pakket bij defect, resolutie 188",
-        "fr": "Capacité de détecter automatiquement de nouveaux appareils ajoutés\nAssure qu'une version d'oreiller compatible est utilisée (10.0.1)\nAjouter le paquet python d'oreiller par défaut, résout #188",
-        "it": "Capacità di rilevare automaticamente nuovi dispositivi aggiunti\nConsente di utilizzare una versione di cuscino compatibile (10.0.1)\nAggiungere il pacchetto del pitone del cuscino per impostazione predefinita, risolve #188",
-        "es": "Capacidad para detectar automáticamente nuevos dispositivos añadidos\nGarantiza que se utilice una versión de almohada compatible (10.0.1)\nAñadir paquete de pitón de almohada por defecto, resuelve #188",
-        "pl": "Umożliwość automatycznego wykrywania nowych urządzeń dodano do dyspozycji nowe urządzenia\nWykorzystywana wersja poduszki jest używana (10,0,1)\nAddd pillow python domyślnie rozwiązał pakiet #188",
-        "uk": "Можливість автоматично визначати нові пристрої\nЗабезпечує сумісну подушку версії (10.0.1)\nДодати подушку python пакет за замовчуванням, вирішує #188",
-        "zh-cn": "自动发现新装置的能力\n确保采用兼容的导游版本(10.0.1)\n第188号行动"
+      "0.7.0-beta.3": {
+        "en": "**NEW**: Added support for `colorBrightness`, `coldWhite`, `warmWhite`, and `colorMode` states for lights using the new ESPHome color mode API\n**FIXED**: RGB light control (brightness, color, white, colorTemperature) not working with newer ESPHome firmware that uses `supportedColorModesList` instead of deprecated legacy flags (#338)",
+        "de": "**NEW**: Unterstützung für `colorBrightness`, `coldWhite`, `warmWhite` und `colorMode` Zustände für Lichter mit der neuen ESPHome Farbmodus API\n**FIXED**: RGB Lichtsteuerung (Brightness, Farbe, weiß, FarbeTemperature) nicht mit neuerer ESPHome Firmware, die `supportedColorModesList` anstelle von deprecated Legacy Fahnen verwendet (#338)",
+        "ru": "**NEW**: Добавлена поддержка состояний «colorBrightness», «coldWhite», «warmWhite» и «colorMode» для огней с использованием нового API цветового режима ESPHome\n** FIXED**: Управление светом RGB (яркость, цвет, белый, цветовая температура) не работает с новой прошивкой ESPHome, которая использует «поддерживаемый ColorModesList» вместо устаревших флагов (#338)",
+        "pt": "**NOVO**: Adicionado suporte para `colorBrightness`, `coldWhite`, `warmWhite`, e `colorMode` estados para luzes usando o novo modo de cores ESPHome API\n**FIXED**: Controle de luz RGB (brilho, cor, branco, corTemperatura) não trabalhando com firmware ESPHome mais recente que usa `supportedColorModesList` em vez de bandeiras legadas deprecadas (#338)",
+        "nl": "**NIEUW**: Toegevoegde ondersteuning voor kleurBrightness, \n**FIXED**: RGB lichtcontrole (helderheid, kleur, wit, kleurTemperatuur) werkt niet met nieuwere ESPHome firmware die gebruik maakt van de ondersteundeColorModesListIn plaats van verouderde legacy vlaggen (#338)",
+        "fr": "**NOUVEAU**: Ajout du support pour les états `colorBrightness`, `coldWhite`, `warmWhite` et `colorMode` pour les lumières en utilisant la nouvelle API en mode couleur ESPHome\n**FIXED**: RGB contrôle de la lumière (brightness, color, white, colorTemperature) ne fonctionne pas avec le nouveau firmware ESPHome qui utilise `supportedColorModesList` au lieu de drapeaux hérités dépréciés (#338)",
+        "it": "**NEW**: Aggiunto il supporto per `colorBrightness`, `coldWhite`, `warmWhite`, e `colorMode` stati per le luci utilizzando il nuovo ESPHome colore modalità API\n**FIXED**: RGB light control (luce, colore, bianco, coloreTemperatura) non funziona con il nuovo firmware ESPHome che utilizza `supportedColorModesList` invece di bandiere legacy deprecate (#338)",
+        "es": "**NEW**: Añadido soporte para `colorBrightness`, `coldWhite`, `warmWhite`, and `colorMode` states for lights using the new ESPHome color mode API\n**FIXED**: Control de luz RGB (brightness, color, blanco, colorTemperatura) no trabaja con el firmware ESPHome más nuevo que utiliza 'ColorModesList` compatible en lugar de banderas heredadas deprecatadas (#338)",
+        "pl": "* *NOWOŚĆ* *: Dodano wsparcie dla 'colorBrighty', 'coldWhite', 'colorWhite' i 'colorMode' dla świateł przy użyciu nowego trybu kolorów ESPHome API \n* *FIXED* *: Sterowanie światłem RGB (jasność, kolor, biel, barwa) niepracujące z nowszymi firmware ESPHome, które używa 'supportedColorModesList' zamiast zdeprecjonowanych flag (# 338) ",
+        "uk": "**NEW**: Додана підтримка `colorBrightness`, `coldWhite`, `warmWhite`, `colorMode` станів для вогнів, використовуючи новий ESPHome колірний режим API\n**FIXED**: RGB легкий контроль (яскравість, колір, білий, колірTemperature) не працює з новою прошивкою ESPHome, яка використовує `supportedColorModesList` замість відхилених прапорів спадщини (#338)",
+        "zh-cn": "**NEW**: 添加支持使用新的ESPHome颜色模式API的“彩色亮度”、“冷白”、“暖白”和“彩色模式”照明装置\n** FIXED**:RGB灯光控制(亮度,颜色,白色,色质)不与使用`支持的ColorModesList ' 而不是被磨损的遗留旗帜的更新ESPHome固件合作(# 338)"
       },
-      "0.5.0-beta.4": {
-        "en": "Refactor memory caching of device data, resolves #189",
-        "de": "Refactor-Speicher Caching von Gerätedaten, löst #189",
-        "ru": "Рефакторная память кэширования данных устройства, решает #189",
-        "pt": "Cache de memória refator dos dados do dispositivo, resolve #189",
-        "nl": "Refactor geheugen caching of apparatuur, resoluties 189",
-        "fr": "Rémunérer le cache mémoire des données de périphérique, résout #189",
-        "it": "Cache di memoria refactor dei dati del dispositivo, risolve #189",
-        "es": "Refactor memoria caching de datos del dispositivo, resuelve #189",
-        "pl": "Refactor memory cache of data (ang.)",
-        "uk": "Рефакторне кешування пам'яті даних пристрою, вирішує #189",
-        "zh-cn": "放映装置数据,解决第189号行动"
+      "0.7.0-beta.2": {
+        "en": "improve README\nfix #394, actually fix #340, #356\n**FIXED**: Fan component not working #205\n**NEW**: Allow customization of Pillow version used by ESPHome Dashboard, similar to ESPHome version selector\n**NEW**: Add \"Clear Autopy Cache\" button in ESPHome Dashboard configuration tab to resolve dashboard loading issues (#209)",
+        "de": "rEADME\nfix #394, eigentlich fix #340, #356\n**FIXED**: Fan-Komponente nicht funktioniert #205\n**NEW**: Erlauben Anpassung der Pillow-Version, die von ESPHome Dashboard verwendet wird, ähnlich wie ESPHome-Versionsauswahl\n**NEW**: Fügen Sie die Schaltfläche \"Klar Autopy Cache\" in ESPHome Dashboard Konfigurationstabelle hinzu, um dashboard Ladeprobleme zu lösen (#209)",
+        "ru": "улучшить чтение\nисправить #394, фактически исправить #340, #356\n** FIXED**: Фан-компонент не работает #205\n**NEW**: позволяет настраивать версию Pillow, используемую ESPHome Dashboard, аналогично селектору версии ESPHome\n**NEW**: Добавить кнопку «Clear Autopy Cache» во вкладку конфигурации ESPHome Dashboard для решения проблем загрузки панели управления (#209)",
+        "pt": "melhorar o README\ncorrigir #394, realmente corrigir #340, #356\n**FIXED**: Componente do ventilador não funcionando #205\n**NOVA**: Permitir a personalização da versão Pillow usada pelo ESPHome Dashboard, semelhante ao seletor de versão ESPHome\n**NOVO**: Adicione o botão \"Limpar Cache Autopy\" na guia de configuração do painel ESPHome para resolver problemas de carregamento do painel (#209)",
+        "nl": "rEADME verbeteren\nfix #394, fix eigenlijk #340, #356\n** VAST**: Fan-component werkt niet #205\n**NIEUW**: Laat aanpassing van Pillow-versie gebruikt door ESPHome Dashboard, vergelijkbaar met ESPHome versie-selector\n**NIEUW**: Voeg \"Clear Autopy Cache\" knop in ESPHome Dashboard configuratie tabblad om dashboard laden problemen op te lossen (#209)",
+        "fr": "améliorer le README\ncorrection #394, en fait correction #340, #356\n**FIXED**: Composant de ventilateur ne fonctionnant pas #205\n**NEW**: Autoriser la personnalisation de la version d'oreiller utilisée par ESPHome Dashboard, similaire au sélecteur de version ESPHome\n**NOUVEAU**: Ajouter \"Cache automatique claire\" bouton dans l'onglet de configuration du tableau de bord ESPHome pour résoudre les problèmes de chargement du tableau de bord (#209)",
+        "it": "migliorare README\nfix #394, realtã fix #340, #356\n**FIXED**: Componente ventilatore che non funziona #205\n**NEW**: Consentire la personalizzazione della versione Pillow utilizzata da ESPHome Dashboard, simile al selettore della versione ESPHome\n**NEW**: Aggiungi il pulsante \"Clear Autopy Cache\" nella scheda di configurazione di ESPHome Dashboard per risolvere i problemi di caricamento del cruscotto (#209)",
+        "es": "mejorar README\n#394, en realidad arreglar #340, #356\n**FIXED**: Componente de ventilador que no funciona #205\n**NEW**: Permitir la personalización de la versión de Pillow utilizada por ESPHome Dashboard, similar al selector de la versión ESPHome\n**NEW**: Agregue el botón \"Clear Autopy Cache\" en la pestaña de configuración de ESPHome Dashboard para resolver problemas de carga de panel (#209)",
+        "pl": "ulepszenie README\nfix # 394, actually fix # 340, # 356\n* *FIXED* *: Element wentylatora nie działa # 205 \n* *NOWOŚĆ* *: Zezwalaj na personalizację wersji Poduszki używanej przez ESPHome Dashboard, podobną do wyboru wersji ESPHome \n* *NOWOŚĆ* *: Dodaj przycisk \"Clear Autopy Cache\" w zakładce Konfiguracja tablicy rozdzielczej ESPHome, aby rozwiązać problemy z załadowaniem tablicy rozdzielczej (# 209) ",
+        "uk": "покращити резюме\nвиправити #394, насправді виправити #340, #356\n**FIXED***: Компонент вентилятора не працює #205\n**NEW**: Дозволяє налаштування версії Pillow, що використовується ESPHome Dashboard, схожим на ESPHome версія selector\n**NEW**: Додати кнопку \"Зареєструвати Autopy Cache\" у вкладці конфігурації ESPHome Dashboard для вирішення проблем завантаження панелі (#209)",
+        "zh-cn": "改进读取\n修复394号,实际修复340号,356号\n** FIXED**:粉丝组件不工作#205\n**NEW**:允许定制ESPHome Dashboard使用的Pillow版本,类似于ESPHome版本选择器\n**NEW**:在ESPHome Dashboard配置标签中添加\"清除自动缓存\"按钮以解决仪表板加载问题(# 209)"
       },
-      "0.5.0-beta.1": {
-        "en": "Only show error messages once for unreachable devices",
-        "de": "Fehlermeldungen nur einmal anzeigen für nicht erreichbare Geräte",
-        "ru": "Только покажите сообщения об ошибках один раз для недоступных устройств",
-        "pt": "Apenas mostre mensagens de erro uma vez por dispositivos não acessíveis",
-        "nl": "Laat maar één keer foutmeldingen zien voor onbereikbare apparaten",
-        "fr": "Seulement afficher des messages d'erreur une fois pour les périphériques inaccessibles",
-        "it": "Mostra solo messaggi di errore una volta per dispositivi non accessibili",
-        "es": "Sólo mostrar mensajes de error una vez para dispositivos no accesibles",
-        "pl": "Wykorzystuje tylko błędy po raz pierwszy dla nieodwracalnych urządzeń",
-        "uk": "Тільки показувати повідомлення про помилки після ненадійних пристроїв",
-        "zh-cn": "只有当不可行的装置发生错误信息时才显示错误信息。"
+      "0.7.0": {
+        "en": "**NEW**: Add support for Lock entity type - Lock devices now properly display state and control options #353\n**NEW**: YAML file management interface in admin UI for upload/download/delete operations (#369)\nimprove dashboard testing\nimprove logging for #201\nupdate pillow\nfix readme link to lib\nfix connection status #311\nremove unneeded node-fetch dependency\nautomatic migration from versions prior to ESPHomeDashboardUrl introduction (pre v0.6.1)\n**FIXED**: Invalid jsonConfig schema - removed unsupported `doNotSave` property from table elements",
+        "de": "**NEW**: Unterstützung für Lock-Entity-Typ hinzufügen - Lock-Geräte jetzt richtig anzeigen Zustand und Steueroptionen #353\n**NEW**: YAML-Dateiverwaltungsschnittstelle in admin UI für Upload/Download/Auslöschung (#369)\ndashboard testen\nverbesserung der protokollierung für #201\nupdate kissen\nreadme link zu lib reparieren\nfix-verbindungsstatus #311\nnicht benötigte knoten-fetch-abhängigkeit entfernen\nautomatische Migration von Versionen vor der Einführung von ESPHomeDashboardUrl (pre v0.6.1)\n**FIXED**: Invalid jsonConfig Schema - entfernte nicht unterstützte `doNotSave` Eigenschaft von Tabellenelementen",
+        "ru": "**NEW**: Добавить поддержку типа объекта блокировки - устройства блокировки теперь должным образом отображают параметры состояния и управления #353\n**NEW**: интерфейс управления файлами YAML в интерфейсе администратора для операций загрузки/загрузки/удаления (#369)\nулучшить тестирование приборной панели\nулучшение регистрации для #201\nобновление подушки\nобсуждение readme link to lib\nстатус подключения #311\nустранение ненужной зависимости от узла\nавтоматическая миграция с версий до внедрения ESPHomeDashboardUrl (pre v0.6.1)\n** FIXED**: Недействительная схема jsonConfig - удалено неподдерживаемое свойство \"doNotSave\" из элементов таблицы",
+        "pt": "**NOVO**: Adicionar suporte para o tipo de entidade Lock - Dispositivos Lock agora exibem corretamente as opções de estado e controle #353\n**NOVO**: Interface de gerenciamento de arquivos YAML na interface de administração UI para operações de upload/download/delete (#369)\nmelhorar o teste do painel\nmelhorar o registro para #201\natualizar almofada\ncorrigir o link readme para a lib\ncorrigir o estado da ligação # 311\nremover a dependência de busca de nó desnecessária\nmigração automática de versões anteriores à introdução ESPHomeDashboardUrl (pré v0.6.1)\n**FIXED**: Esquema inválido do jsonConfig - propriedade `doNotSave` não suportada",
+        "nl": "**NEW**: Voeg ondersteuning toe voor het type Lock-entiteit - Vergrendel apparaten nu correct de status en controle opties #353\n**NIEUW**: YAML file management interface in admin UI voor upload/download/delete operaties (#369)\nverbeteren van dashboard testen\nverbeteren logging voor #201\nupdate kussen\nrepareren readme link naar lib\nfix verbindingsstatus #311\nverwijder ongewenste node-fetch afhankelijkheid\nautomatische migratie van versies voorafgaand aan ESPHomeDashboardUrl introductie (pre v0.6.1)\n** VAST**: Ongeldig jsonConfig schema - verwijderde niet-ondersteunde eigenschap van tabelelementen",
+        "fr": "**NOUVEAU**: Ajout de la prise en charge du type d'entité de verrouillage - Verrouiller les appareils maintenant correctement afficher l'état et les options de contrôle #353\n**NOUVEAU**: Interface de gestion de fichiers YAML dans l'interface utilisateur admin pour les opérations de téléchargement/téléchargement/effacement (#369)\naméliorer les essais de tableau de bord\naméliorer l'enregistrement pour #201\nmettre à jour l'oreiller\ncorriger le lien readme vers lib\nfixer l'état de connexion #311\nsupprimer la dépendance inutile des nœuds\nmigration automatique des versions avant l'introduction de ESPHomeDashboardUrl (pre v0.6.1)\n**FIXED**: Schéma jsonConfig non valide - supprimé la propriété `doNotSave` non supportée des éléments de table",
+        "it": "**NEW**: Aggiungi supporto per tipo di entità Lock - Dispositivi di blocco ora correttamente visualizzano le opzioni di stato e controllo #353\n**NEW**: interfaccia di gestione dei file YAML nell'interfaccia di amministrazione UI per operazioni di upload/download/delete (#369)\nmigliorare il test del cruscotto\nmigliorare logging per #201\naggiornamento cuscino\ncorrezione link di lettura per lib\nstato di connessione di correzione #311\nrimuovere la dipendenza da nodo-fetch non necessaria\nmigrazione automatica dalle versioni precedenti l'introduzione di ESPHomeDashboardUrl (pre v0.6.1)\n**FIXED**: Invalid jsonConfig schema - rimosso `doNotSave` immobili da elementi da tavolo",
+        "es": "**NEW**: Añadir soporte para el tipo de entidad de bloqueo - Los dispositivos de bloqueo ahora muestran correctamente las opciones de estado y control #353\n**NEW**: Interfaz de gestión de archivos YAML en admin UI para operaciones de carga/descarga/delete (#369)\nmejorar las pruebas de dashboard\nmejorar el registro para #201\nactualización almohada\narreglar el vínculo readme con la lib\nestado de conexión de fijación #311\neliminar la dependencia sin necesidad\nmigración automática desde versiones anteriores a ESPHomeDashboardIntroducción del usuario (pre v0.6.1)\n**FIXED**: Invalid jsonConfig schema - eliminó propiedad no apoyada `doNotSave` de elementos de mesa",
+        "pl": "* *NOWOŚĆ* *: Dodaj wsparcie dla typu podmiotu blokującego - Urządzenia blokujące teraz poprawnie wyświetlają stan i opcje sterowania # 353 \n* *NOWOŚĆ* *: Interfejs do zarządzania plikami YAML w UI administratora do wysyłania / pobierania / usuwania operacji (# 369) \npoprawić testowanie płyt rozdzielczych\npoprawić logowanie dla # 201\naktualizacji poduszki\nfix readme link do lib\nustaw status połączenia # 311\nusuń niepotrzebną zależność node-get\nautomatyczna migracja z wersji przed wprowadzeniem ESPHOmeDashboardUrl (pre v0.6.1)\n* *FIXED* *: Nieprawidłowy schemat jsonConfig - usunięte nieobsługiwane właściwości 'doNotSave' z elementów tabeli ",
+        "uk": "**NEW**: Додати підтримку типу Lock - Lock devices тепер правильно відображати стан та параметри контролю #353\n**NEW**: Інтерфейс керування файлами YAML в адмін UI для завантаження / завантаження / видалення операцій (#369)\nполіпшити тестування панелі приладів\nпокращити залогів на #201\nоновлення подушки\nвиправити посилання для читання\nстатус на сервери\nвидалити невидиму залежність від вузла\nавтоматична міграція з версій до ESPHomeDashboardUrl введення (pre v0.6.1)\n**FIXED**: Invalid jsonConfig schema - вилучено непідтримуваний `doNotSave` майно з елементів таблиці",
+        "zh-cn": "** NEW**: 添加对 Lock 实体类型的支持 - 锁定设备现在正确显示状态和控制选项 # 353\n**NEW**:用于上传/下载/删除操作的管理员UI中的YAML文件管理接口(# 369)\n改进仪表板测试\n改进201号记录\n更新枕头\n固定读取链接到 lib\n固定连接状态 # 311\n删除不需要的节点依赖\n从ESPHomeDashboardUrl引入前的版本自动迁移(pre v0.6.1)\n** FIXED**: 无效的jsonConfig schema - 从表格元素中删除未支持的“不拯救”属性"
       },
-      "0.5.0-beta.0": {
-        "en": "Admin interface redesigned to JSON-Config relates #171\nBackend massages implemented to Add/Modify/Delete devices\nDevice connection handling and visibility of devices improved\nAuto device discovery temporary disabled due to external bug, relates #175\nPossibility added to exclude IP-Addresses from device discovery, relates #175\nAllow Selection to listen on specific interface or all for device discovery resolves #67\nState implemented to show current connection status (unreachable/disconnected/connected) to improve management of devices\nSeveral bugfixes, resolves #181 resolves #",
-        "de": "Admin-Schnittstelle neu gestaltet JSON-Config bezieht #171\nBackend-Massagen in Add/Modify/Delete-Geräte implementiert\nGeräteanschlusshandling und Sichtbarkeit von Geräten verbessert\nAuto-Gerät Entdeckung vorübergehend behindert durch externe Fehler, bezieht #175\nMöglichkeit hinzugefügt, IP-Adressen von der Geräteentdeckung auszuschließen, bezieht #175\nErlauben Sie der Auswahl, auf einer bestimmten Schnittstelle zuzuhören oder alles für Geräteentdeckungen löst #67\nStaat implementiert, um den aktuellen Verbindungsstatus (nicht erreichbar/vernetzt/vernetzt/vernetzt) zu zeigen, um die Verwaltung von Geräten zu verbessern\nMehrere Bugfixes, löst #181 löst #",
-        "ru": "Админ интерфейс переработан JSON-Config относится #171\nМассажи Backend реализованы для Add/Modify/Delete устройств\nОбработка соединения устройства и видимость улучшенных устройств\nАвтоматическое устройство обнаруживает временные инвалиды из-за внешней баг, относится #175\nВозможность добавлена для исключения IP-адресов с открытия устройства, относится #175\nРазрешить выбор, чтобы прослушать конкретный интерфейс или все для обнаружения устройств решает #67\nГосударство реализовано для демонстрации текущего состояния соединения (недоступно/отключено/подключено) для улучшения управления устройствами\nНесколько исправлений, решает #181 решает #",
-        "pt": "Interface de administrador redesenhada para JSON-Config relaciona #171\nMassagens de backend implementadas para dispositivos Add/Modify/Delete\nO manuseio e a visibilidade de dispositivos melhorados\nAuto detecção de dispositivo desativado temporário devido a bug externo, relaciona #175\nPossibilidade adicionada para excluir endereços IP da descoberta do dispositivo, relaciona #175\nPermitir Seleção para ouvir em interface específica ou tudo para a descoberta de dispositivos resolve #67\nEstado implementado para mostrar o estado de conexão atual (não acessível/desconectado/conectado) para melhorar a gestão de dispositivos\nVárias correções de bugs, resolve #181 resolve #",
-        "nl": "Admin interface opnieuw toegewezen aan JSON-Config relaties #171\nSteun massages geïnformeerd tot Add/Modificatie/ Delete apparaten\nVertaling:\nAuto-apparaat ontdekking tijdelijk gehandicapt door externe insecten, betrekking tot 175\nMogelijkheden toegevoegd om IP-Adresses uit te sluiten van apparaat ontdekking, relaties van 175\nVertaling:\nDe staat toont de huidige connectiestatus (ontvankelijke/geconnecteerd/geconnecteerd om het management van apparaten te verbeteren\nVerschillende insecten, oplossingen #181 oplossingen",
-        "fr": "L'interface d'administration repensée à JSON-Config se rapporte à #171\nMassages de backend mis en œuvre pour Add/Modify/Delete appareils\nManipulation et visibilité des dispositifs améliorés\nDécouverte de périphérique automobile temporaire désactivé en raison de bug externe, relate #175\nPossibilité ajoutée pour exclure les adresses IP de la découverte de l'appareil, se rapporte #175\nPermettre à Sélection d'écouter sur une interface spécifique ou tout pour la découverte de périphériques résout #67\nÉtat mis en œuvre pour montrer l ' état actuel de la connexion (non disponible/déconnecté/connecté) afin d ' améliorer la gestion des dispositifs\nPlusieurs bugfixes, résout #181 résout #",
-        "it": "L'interfaccia di amministrazione ridisegnata a JSON-Config riguarda #171\nI massaggi backend implementati per aggiungere/modifica/selezionare i dispositivi\nMiglioramento della gestione della connessione e della visibilità dei dispositivi\nAuto dispositivo scoperta temporaneamente disabilitato a causa di bug esterno, si riferisce #175\nPossibilità aggiunta per escludere gli indirizzi IP dalla scoperta del dispositivo, si riferisce #175\nConsentire Selezione di ascoltare su interfaccia specifica o tutto per la scoperta del dispositivo risolve #67\nStato implementato per mostrare lo stato di connessione corrente (non raggiungibile/disconnesso/connesso) per migliorare la gestione dei dispositivi\nDiversi bugfixes, risolve #181 risolve #",
-        "es": "Interfaz de Admin rediseñado con JSON-Config se relaciona con #171\nMasajes de backend implementados para dispositivos Add/Modify/Delete\nMejora del manejo y visibilidad de los dispositivos\nBúsqueda de dispositivos automáticos desactivados temporalmente debido a fallo externo, se relaciona #175\nPosibilidad añadida para excluir IP-Addresses del descubrimiento del dispositivo, se relaciona con #175\nPermitir que la selección escuche en una interfaz específica o todo para el descubrimiento del dispositivo resuelve #67\nEstado implementado para mostrar el estado actual de conexión (no accesible/desconectado/conectado) para mejorar la gestión de dispositivos\nVarios bugfixes, resuelve #181 resuelve #",
-        "pl": "Interfejs Admin został przeprojektowany przez JSON-Config z numerem #171\nMassage backendowe realizowane są przez Addd/Modify/Delete\nPrzestrzenie połączenia i widoczność ulepszały urządzenia\nOdkrycie urządzenia automatycznego związane jest tymczasowo ze względu na zewnętrzny błęd\nPozytywność dodaje się do wykluczenia IP-Adddress z odkrycia urządzenia, dodając numer #175\nAllow Selection to listen on specific interface or all for device discoveries. „Allow Selection”\nState zaimplementowała aktualny status połączenia (niezwiązany/rozłączony) w celu poprawy zarządzania urządzeniami\nKilka błędów rozwiązało numer #181",
-        "uk": "Інтерфейс адміністратора, перероблений на JSON-Config, відноситься до #171\nЗакінчення масажів, реалізованих для пристроїв Додавання/Modify/Delete\nПристрій з'єднання та видимість пристроїв\nАвтопристрою виявлення тимчасово відключених через зовнішній баг, відноситься #175\nМожливість довести до виключення IP-додатків з пристрою, відноситься #175\nДозволяє вибрати для прослуховування певного інтерфейсу або всіх для виявлення пристроїв вирішує #67\nСтан, що реалізується для відображення поточного стану з'єднання (невід'ємний / відключений / підключений) для поліпшення управління пристроями\nКілька виправлень, вирішує #181 #",
-        "zh-cn": "重新设计给联索行动-阿菲格的专用接口涉及第171号行动。\n增购/装卸装置\n装置的连接和可见度有所改善\n自动装置发现因外部纤维而临时残疾,涉及第175号行动。\n排除在装置发现中的IP-反应之外的可添加的灵活性涉及第175号行动。\n允许选择听取具体接口或所有装置的辨认办法\n国家执行了目前联系状况(可核查/无联系/连接)以改进装置的管理\n数个小册子,第181号行动决心"
+      "0.7.0-beta.1": {
+        "en": "improve dashboard testing",
+        "de": "dashboard testen",
+        "ru": "улучшить тестирование приборной панели",
+        "pt": "melhorar o teste do painel",
+        "nl": "verbeteren van dashboard testen",
+        "fr": "améliorer les essais de tableau de bord",
+        "it": "migliorare il test del cruscotto",
+        "es": "mejorar las pruebas de dashboard",
+        "pl": "poprawić testowanie płyt rozdzielczych",
+        "uk": "поліпшити тестування панелі приладів",
+        "zh-cn": "改进仪表板测试"
       },
-      "0.4.1": {
-        "en": "Bugfix: Password / connection issues in previous beta resolves #179\nBugfix: Allow individual API password or encryption keys for devices, resolves #174\nSupport ESPHome device Encryption Key (you should migrate from API password to Encryption Key ! resolves #152)",
-        "de": "Bugfix: Passwort / Verbindungsprobleme in vorherigen beta löst #179\nBugfix: Lassen Sie individuelle API-Passwort oder Verschlüsselungsschlüssel für Geräte, löst #174\nSupport ESPHome Gerät Verschlüsselungsschlüssel (Sie sollten von API-Passwort zu Verschlüsselungsschlüssel migrieren! löst #152)",
-        "ru": "Bugfix: Пароль / проблемы соединения в предыдущей бета-версии решает #179\nBugfix: Разрешить индивидуальные API-пароль или ключи шифрования для устройств, решает #174\nПоддержка ESPHome устройства Encryption Key (вы должны migrate от API-пароль для Encryption Key! решает #152)",
-        "pt": "Bugfix: Problemas de senha / conexão no beta anterior resolve #179\nBugfix: Permitir senha API individual ou chaves de criptografia para dispositivos, resolve #174\nSuporte ESPHome dispositivo Encryption Key (você deve migrar da senha API para Encryption Key! resolve #152)",
-        "nl": "Vertaling:\nBugfix: Sta individuele API wachtwoord of encryptie sleutels voor apparatuur, vaststellen\nSteun ESPHome apparatuur encryption Key (je moet migreren van API wachtwoord naar Encryption Key! Vertaling:",
-        "fr": "Bugfix: Mot de passe / problèmes de connexion dans la bêta précédente résout #179\nBugfix: Permettre un mot de passe ou des clés de chiffrement de l'API pour les appareils, résout #174\nSupport ESPHome périphérique Clé de chiffrement (vous devriez migrer de l'API mot de passe à la clé de chiffrement ! résout #152)",
-        "it": "Bugfix: Password / problemi di connessione nella precedente beta risolve #179\nBugfix: Consentire singole password API o chiavi di crittografia per i dispositivi, risolve #174\nSupporto dispositivo ESPHome chiave di crittografia (si dovrebbe migrare da password API a chiave di crittografia! risolve #152)",
-        "es": "Bugfix: Problemas de contraseña / conexión en beta anterior resuelve #179\nBugfix: Permitir contraseña o claves de cifrado individuales de API para dispositivos, resuelve #174\nSoporte ESPHome dispositivo clave de cifrado (debe migrar desde contraseña de API a clave de cifrado! resuelve #152)",
-        "pl": "Bugfix: Password / Problemy połączenia w poprzednich beta rozwiązały numer #179\nBugfix: Allow indywidualny API password lub klucze szyfrujące dla urządzeń, rozwiązał numer #174\nWsparcie ESPHome: Encryption Key (you powinien wyemigrować z hasła API do Encryption Key ! Rozwiązanie #152",
-        "uk": "Помилки: Пароль / питання з'єднання у попередніх бета-рішеннях #179\nПомилки: Дозволити індивідуальний пароль API або ключі шифрування для пристроїв, вирішує #174\nПідтримка ESPHome пристрій шифрування ключа (Ви повинні мигратувати від API пароля до ключа шифрування ! розчини #152)",
-        "zh-cn": "Bugfix:在前几批被盗用词/联系问题\nBugfix: 允许个人的通用或加密装置的关键,第174号行动\n支持ESPHome装置的加密关键(you应从API密码移到恩加密的关键! 第152号决议)"
+      "0.7.0-beta.0": {
+        "en": "**FIXED**: Invalid jsonConfig schema - removed unsupported `doNotSave` property from table elements\n**NEW**: YAML file management interface in admin UI for upload/download/delete operations (#369)\nimprove logging for #201\nautomatic migration from versions prior to ESPHomeDashboardUrl introduction (pre v0.6.1)\nupdate pillow\nfix readme link to lib\nfix connection status #311\nremove unneeded node-fetch dependency",
+        "de": "**FIXED**: Invalid jsonConfig Schema - entfernte nicht unterstützte `doNotSave` Eigenschaft von Tabellenelementen\n**NEW**: YAML-Dateiverwaltungsschnittstelle in admin UI für Upload/Download/Auslöschung (#369)\nverbesserung der protokollierung für #201\nautomatische Migration von Versionen vor der Einführung von ESPHomeDashboardUrl (pre v0.6.1)\nupdate kissen\nreadme link zu lib reparieren\nfix-verbindungsstatus #311\nnicht benötigte knoten-fetch-abhängigkeit entfernen",
+        "ru": "** FIXED**: Недействительная схема jsonConfig - удалено неподдерживаемое свойство \"doNotSave\" из элементов таблицы\n**NEW**: интерфейс управления файлами YAML в интерфейсе администратора для операций загрузки/загрузки/удаления (#369)\nулучшение регистрации для #201\nавтоматическая миграция с версий до внедрения ESPHomeDashboardUrl (pre v0.6.1)\nобновление подушки\nобсуждение readme link to lib\nстатус подключения #311\nустранение ненужной зависимости от узла",
+        "pt": "**FIXED**: Esquema inválido do jsonConfig - propriedade `doNotSave` não suportada\n**NOVO**: Interface de gerenciamento de arquivos YAML na interface de administração UI para operações de upload/download/delete (#369)\nmelhorar o registro para #201\nmigração automática de versões anteriores à introdução ESPHomeDashboardUrl (pré v0.6.1)\natualizar almofada\ncorrigir o link readme para a lib\ncorrigir o estado da ligação # 311\nremover a dependência de busca de nó desnecessária",
+        "nl": "** VAST**: Ongeldig jsonConfig schema - verwijderde niet-ondersteunde eigenschap van tabelelementen\n**NIEUW**: YAML file management interface in admin UI voor upload/download/delete operaties (#369)\nverbeteren logging voor #201\nautomatische migratie van versies voorafgaand aan ESPHomeDashboardUrl introductie (pre v0.6.1)\nupdate kussen\nrepareren readme link naar lib\nfix verbindingsstatus #311\nverwijder ongewenste node-fetch afhankelijkheid",
+        "fr": "**FIXED**: Schéma jsonConfig non valide - supprimé la propriété `doNotSave` non supportée des éléments de table\n**NOUVEAU**: Interface de gestion de fichiers YAML dans l'interface utilisateur admin pour les opérations de téléchargement/téléchargement/effacement (#369)\naméliorer l'enregistrement pour #201\nmigration automatique des versions avant l'introduction de ESPHomeDashboardUrl (pre v0.6.1)\nmettre à jour l'oreiller\ncorriger le lien readme vers lib\nfixer l'état de connexion #311\nsupprimer la dépendance inutile des nœuds",
+        "it": "**FIXED**: Invalid jsonConfig schema - rimosso `doNotSave` immobili da elementi da tavolo\n**NEW**: interfaccia di gestione dei file YAML nell'interfaccia di amministrazione UI per operazioni di upload/download/delete (#369)\nmigliorare logging per #201\nmigrazione automatica dalle versioni precedenti l'introduzione di ESPHomeDashboardUrl (pre v0.6.1)\naggiornamento cuscino\ncorrezione link di lettura per lib\nstato di connessione di correzione #311\nrimuovere la dipendenza da nodo-fetch non necessaria",
+        "es": "**FIXED**: Invalid jsonConfig schema - eliminó propiedad no apoyada `doNotSave` de elementos de mesa\n**NEW**: Interfaz de gestión de archivos YAML en admin UI para operaciones de carga/descarga/delete (#369)\nmejorar el registro para #201\nmigración automática desde versiones anteriores a ESPHomeDashboardIntroducción del usuario (pre v0.6.1)\nactualización almohada\narreglar el vínculo readme con la lib\nestado de conexión de fijación #311\neliminar la dependencia sin necesidad",
+        "pl": "* *FIXED* *: Nieprawidłowy schemat jsonConfig - usunięte nieobsługiwane właściwości 'doNotSave' z elementów tabeli \n* *NOWOŚĆ* *: Interfejs do zarządzania plikami YAML w UI administratora do wysyłania / pobierania / usuwania operacji (# 369) \npoprawić logowanie dla # 201\nautomatyczna migracja z wersji przed wprowadzeniem ESPHOmeDashboardUrl (pre v0.6.1)\naktualizacji poduszki\nfix readme link do lib\nustaw status połączenia # 311\nusuń niepotrzebną zależność node-get",
+        "uk": "**FIXED**: Invalid jsonConfig schema - вилучено непідтримуваний `doNotSave` майно з елементів таблиці\n**NEW**: Інтерфейс керування файлами YAML в адмін UI для завантаження / завантаження / видалення операцій (#369)\nпокращити залогів на #201\nавтоматична міграція з версій до ESPHomeDashboardUrl введення (pre v0.6.1)\nоновлення подушки\nвиправити посилання для читання\nстатус на сервери\nвидалити невидиму залежність від вузла",
+        "zh-cn": "** FIXED**: 无效的jsonConfig schema - 从表格元素中删除未支持的“不拯救”属性\n**NEW**:用于上传/下载/删除操作的管理员UI中的YAML文件管理接口(# 369)\n改进201号记录\n从ESPHomeDashboardUrl引入前的版本自动迁移(pre v0.6.1)\n更新枕头\n固定读取链接到 lib\n固定连接状态 # 311\n删除不需要的节点依赖"
       },
-      "0.4.0": {
-        "en": "Added cleanup capability for unused channels & states after initialisation of device, resolves #39\nAdded button to info channel which allows to delete all offline devices from adapter tree. resolves #39\n[Breaking] Backup strategy changed, requires [BackitUp v2.9.1](https://github.com/simatec/ioBroker.backitup) and activate option for ESPHome, fixes #129",
-        "de": "Zusätzliche Reinigungsfähigkeit für ungenutzte Kanäle & Zustände nach der Initialisierung des Geräts, löst #39\nZusätzlicher Button zum Info-Kanal, der alle Offline-Geräte aus dem Adapterbaum löschen kann. löst #39\n[Breaking] Backup-Strategie geändert, erfordert [BackitUp v2.9.1](https://github.com/simatec/ioBroker.backitup) und aktiviert Option für ESPHome, repariert #129",
-        "ru": "Добавлена возможность очистки неиспользуемых каналов и государств после инициализации устройства, решает #39\nДобавлена кнопка к информационному каналу, что позволяет удалить все оффлайн устройства из дерева адаптера. решает #39\n[Breaking] Стратегия резервного копирования изменена, требует [BackitUp v2.9.1](https://github.com/simatec/ioBroker.backitup) и активировать вариант для ESPHome, исправлений #129",
-        "pt": "Adicionado capacidade de limpeza para canais não utilizados & estados após a inicialização do dispositivo, resolve #39\nAdicionado botão para info canal que permite excluir todos os dispositivos off-line da árvore do adaptador. resolve #39\n[Breaking] Estratégia de backup alterada, requer [BackitUp v2.9.1](https://github.com/simatec/ioBroker.backitup) e opção ativa para ESPHome, correções #129",
-        "nl": "Vervoegde schoonmaak capaciteit voor onbruikbare kanalen apparaat na de initialisatie van 39\nKnop toegevoegd aan info kanaal dat alle offline apparaten van adapter boom laat verwijderen. 39\nOndersteuningsstrategie veranderde, vereist [Backitup v2.9.1, htps:com/simateioBroker, en tactiveer de optie van 12 uur",
-        "fr": "Ajout d'une capacité de nettoyage pour les canaux non utilisés & états après l'initialisation du dispositif, résout #39\nAjout du bouton sur le canal d'info qui permet de supprimer tous les périphériques hors ligne de l'arbre d'adaptateur. résolution #39\n[Breaking] La stratégie de sauvegarde a changé, nécessite [BackitUp v2.9.1](https://github.com/simatec/ioBroker.backitup) et l'option active pour ESPHome, corrige #129",
-        "it": "Aggiunta funzionalità di pulizia per canali e stati non utilizzati dopo l'inizializzazione del dispositivo, risolve #39\nPulsante aggiunto al canale info che consente di eliminare tutti i dispositivi offline dall'albero dell'adattatore. risolve #39\n[Breaking] La strategia di backup è cambiata, richiede [BackitUp v2.9.1](https://github.com/simatec/ioBroker.backitup) e attiva l'opzione per ESPHome, corregge #129",
-        "es": "Capacidad de limpieza agregada para canales no utilizados \" estados después de la inicialización del dispositivo, resuelve #39\nSe agregó botón a canal de información que permite eliminar todos los dispositivos fuera de línea del árbol del adaptador. resuelve #39\n[Breaking] La estrategia de respaldo cambió, requiere [BackitUp v2.9.1](https://github.com/simatec/ioBroker.backitup) y activar la opción para ESPHome, fija #129",
-        "pl": "Po zainicjowaniu możliwości usuwania nieużywanych kanałów i stanów po inicjalizacji urządzenia, rozwiązał #39\nNaciśnięty przycisk do kanału informacyjnego, który umożliwia usunięcie wszystkich urządzeń offline z drzewa adapterowego. Rozwiązanie #39\n(Po zmianie strategii Backupa, wymaga od BOATUTUp v2.9.1(https:/github.com/simatec/ioBroker.backitup) i aktywacji opcji dla ESPHome, naprawa #129",
-        "uk": "Додано можливість очищення каналів і станів після ініціалізації пристрою, вирішує #39\nДодано кнопку на інформаційний канал, який дозволяє видалити всі offline пристрої з дерева адаптера. розчини #39\n[Breaking] Стратегія резервного копіювання змінено, вимагає [BackitUp v2.9.1](https://github.com/simatec/ioBroker.backitup) і активувати варіант для ESPHome, фіксує #129",
-        "zh-cn": "在装置初始化后增加无用渠道和各州的清洁能力,第39号决定\n添加但道托顿以电器,使所有线装置能够从适应树中删除。 行动39\n[Breaking] Backup战略改变,要求[BackitUp v2.9.1](http://github.com/simatec/ioBroker.backitup)和“ESPHome”的主动选择,第129号行动。"
+      "0.6.3": {
+        "en": "add support for text device type #141, displays #103\nfix cover device type #156\nworkaround: downgrade python for now. fixes #259",
+        "de": "Fügen Sie Unterstützung für Text Geräte Typ #141 hinzu, Zeigt #103 an\nDeckungsvorrichtung Typ #156 beheben\nProblemumgehung: Downgrade Python vorerst. Fixes #259",
+        "ru": "Добавить поддержку для текста текстового устройства #141, отображает #103\nИсправить тип устройства на крышке #156\nОбходной путь: понизите Python на данный момент. Исправляет #259",
+        "pt": "Adicionar suporte para o tipo de dispositivo de texto #141, exibe #103\nCorrigir o tipo de dispositivo de capa #156\nSolução alternativa: Downgrade Python por enquanto. Correções #259",
+        "nl": "Ondersteuning toevoegen voor tekstapparaat Type #141, geeft #103 weer\nFix Cover Apparaat Type #156\nTijdelijke oplossing: voorlopig downgrade Python. oplossingen #259",
+        "fr": "Ajouter la prise en charge du type de périphérique de texte # 141, affiche # 103\nCorrection du type de périphérique de couverture # 156\nSolution: rétrograder Python pour l'instant. Correction # 259",
+        "it": "Aggiungi supporto per il tipo di dispositivo di testo #141, visualizza #103\nCorreggi il tipo di dispositivo di copertura #156\nSoluzione alternativa: downgrade Python per ora. Correzioni #259",
+        "es": "Agregar soporte para el tipo de dispositivo de texto Tipo #141, Muestra #103\nFIJO Tipo de dispositivo de cubierta #156\nSolución: de rebaja Python por ahora. Correcciones #259",
+        "pl": "Dodaj obsługę typu urządzenia tekstowego #141, wyświetla #103\nNaprawić okładkę typu #156\nObejście: Na razie obniż się Pythona. Poprawki #259",
+        "uk": "Додайте підтримку типу текстового пристрою № 141, дисплеї № 103\nВиправити тип пристрою покриття № 156\nВирішення: поки що Python знижується. Виправлення №259",
+        "zh-cn": "添加对文本设备类型＃141的支持，显示＃103\n修复封面设备类型＃156\n解决方法：暂时降级Python。修复＃259"
       }
     },
-    "title": "Control ESPHome managed devices",
     "titleLang": {
       "en": "Control ESPHome managed devices",
       "de": "Steuern Sie von ESPHome verwaltete Geräte",
@@ -106,6 +105,7 @@
       "it": "Controlla i dispositivi gestiti da ESPHome",
       "es": "Controle los dispositivos administrados por ESPHome",
       "pl": "Kontroluj urządzenia zarządzane przez ESPHome",
+      "uk": "Керування пристроями ESPHome",
       "zh-cn": "控制ESPHome受管设备"
     },
     "desc": {
@@ -118,6 +118,7 @@
       "it": "Controlla il tuo ESP8266 / ESP32 con file di configurazione semplici ma potenti creati e gestiti da ESPHome",
       "es": "Controle su ESP8266 / ESP32 con archivos de configuración simples pero potentes creados y administrados por ESPHome",
       "pl": "Steruj ESP8266 / ESP32 za pomocą prostych, ale potężnych plików konfiguracyjnych utworzonych i zarządzanych przez ESPHome",
+      "uk": "Керуйте своїм ESP8266/ESP32 за допомогою простих, але потужних файлів конфігурації, створених та керованих ESPHome",
       "zh-cn": "使用由ESPHome创建和管理的简单但功能强大的配置文件控制ESP8266 / ESP32"
     },
     "authors": [
@@ -129,11 +130,9 @@
       "ESP32"
     ],
     "platform": "Javascript/Node.js",
-    "main": "main.js",
     "icon": "esphome.png",
     "enabled": true,
     "messagebox": true,
-    "subscribe": "messagebox",
     "extIcon": "https://raw.githubusercontent.com/DrozmotiX/ioBroker.esphome/main/admin/esphome.png",
     "readme": "https://github.com/DrozmotiX/ioBroker.esphome/blob/main/README.md",
     "loglevel": "info",
@@ -145,39 +144,45 @@
     "adminUI": {
       "config": "json"
     },
-    "materialize": true,
     "tier": 2,
     "plugins": {
       "sentry": {
         "dsn": "https://52227cfa250b49e99b1f28408273402c@sentry.iobroker.net/122"
       }
     },
-    "localLink": "%ESPHomeDashboardUrl%",
+    "localLinks": {
+      "_default": "%ESPHomeDashboardUrl%"
+    },
     "adminTab": {
-      "link": "%ESPHomeDashboardUrl%",
-      "fa-icon": "settings_input_composite"
+      "link": "%ESPHomeDashboardUrl%"
     },
     "dependencies": [
       {
-        "js-controller": ">=3.3.22"
+        "js-controller": ">=6.0.11"
       }
     ],
     "globalDependencies": [
       {
-        "admin": ">=5.1.13"
+        "admin": ">=7.6.17"
       }
     ],
     "licenseInformation": {
       "type": "free",
       "license": "MIT"
-    }
+    },
+    "installedFrom": "DrozmotiX/ioBroker.esphome#d445a7991de6c0b34a66364f1e2b588385903031"
   },
   "encryptedNative": [
     "apiPass",
     "encryptionKey"
   ],
+  "protectedNative": [
+    "apiPass",
+    "encryptionKey"
+  ],
   "native": {
     "ESPHomeDashboardVersion": "Always last available",
+    "PillowVersion": "Always last available",
     "reconnectInterval": 30,
     "apiPass": "",
     "encryptionKey": "",
@@ -186,8 +191,8 @@
     "configStates": false,
     "ESPHomeDashboardEnabled": false,
     "ESPHomeDashboardPort": 6052,
-    "ESPHomeDashboardIP": "localhost",
-    "ESPHomeDashboardUrl": "http://localhost:6052",
+    "ESPHomeDashboardIP": "",
+    "ESPHomeDashboardUrl": "",
     "ignoredDevices": [
       {
         "IP-Address": "192.168.0.1",
