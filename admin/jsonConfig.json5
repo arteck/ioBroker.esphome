@@ -668,7 +668,7 @@
 				"advanced": {
 					"type": "panel",
 					"label": "Advanced",
-					"collapsible": true,
+                    "collapsable": true,
 					"xs": 12,
 					"sm": 12,
 					"md": 12,
@@ -827,9 +827,8 @@
 				// YAML content input
 				"uploadContent": {
 					"newLine": true,
-					"type": "text",
+					"type": "textarea",
 					"label": "lblUploadContent",
-					"multiline": true,
 					"rows": 10,
 					"placeholder": "esphome:\n  name: my-device\n  platform: ESP8266\n  board: nodemcuv2",
 					"xs": 12,

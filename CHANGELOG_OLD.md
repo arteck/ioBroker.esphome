@@ -1,4 +1,44 @@
 # Older changes
+## 0.6.3 (2025-09-16)
+* (@DutchmanNL) Fixed an admin error related to `jsonConfig` validation. #287
+* (@DutchmanNL) Various general fixes and dependency updates to improve stability.
+* (@DutchmanNL) Improved responsive design for better usability across devices. #284
+* (@DutchmanNL) Introduced GitHub Actions to automatically verify the ESPHome Dashboard. #290
+* (@DutchmanNL) Added a comprehensive FAQ section to the README to help users with common questions. #286
+* (@DutchmanNL) Updated the `esphome-native-api` library to V1.3.3, which may resolve connection issues. #201
+
+## 0.6.2 (2025-08-08)
+* (@SimonFischer04) add support for text device type #141, displays #103
+* (@SimonFischer04) fix cover device type #156
+* (@SimonFischer04) workaround: downgrade python for now. fixes #259
+
+## 0.6.1 (2025-05-24)
+* (@SimonFischer04) Update esphome
+* (@ticaki) Optimize admin configuration interface
+* (@DutchmanNL) Optimize backend handling of device discovery
+* (@DutchmanNL) Capability to select ESPHome Dashboard version added, resolves #118
+
+## 0.5.0-beta.8 (2023-11-24)
+* (DutchmanNL) Capability to automatically detect new devices added
+* (DutchmanNL) Ensures a compatible pillow version is used (10.0.1)
+* (SimonFischer04) Add pillow python package by default, resolves #188
+
+## 0.5.0-beta.4 (2023-11-15)
+* (DutchmanNL) Refactor memory caching of device data, resolves #189
+
+## 0.5.0-beta.1 (2023-11-12)
+* (DutchmanNL) Only show error messages once for unreachable devices
+
+## 0.5.0-beta.0 (2023-11-12) - Rebuild Admin Interface & Connection handler
+* (DutchmanNL) Admin interface redesigned to JSON-Config relates #171
+* (DutchmanNL) Backend massages implemented to Add/Modify/Delete devices
+* (DutchmanNL) Device connection handling and visibility of devices improved
+* (DutchmanNL) Auto device discovery temporary disabled due to external bug, relates #175
+* (DutchmanNL) Possibility added to exclude IP-Addresses from device discovery, relates #175
+* (DutchmanNL) Allow Selection to listen on specific interface or all for device discovery resolves #67
+* (DutchmanNL) State implemented to show current connection status (unreachable/disconnected/connected) to improve management of devices
+* (DutchmanNL) Several bugfixes, resolves #181 resolves #
+
 ## 0.4.1 (2023-11-05)
 * (DutchmanNL) Bugfix: Password / connection issues in previous beta resolves #179
 * (DutchmanNL) Bugfix: Allow individual API password or encryption keys for devices, resolves #174
