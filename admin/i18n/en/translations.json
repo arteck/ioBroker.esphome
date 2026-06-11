@@ -68,5 +68,12 @@
     "cnfClearCacheOk": "Clear Cache",
     "cnfClearCacheCancel": "Cancel",
     "lblConfigStates": "Show configuration states",
-    "hlpConfigStates": "Create configuration states for each entity to show device configuration details"
+    "hlpConfigStates": "Create configuration states for each entity to show device configuration details",
+    "lblConnectionBehavior": "Connection behavior for known devices",
+    "lblReconnectInterval": "Reconnect interval (seconds)",
+    "hlpReconnectInterval": "How long to wait before retrying the connection to an offline device (default: 5)",
+    "lblPingInterval": "Ping interval (seconds)",
+    "hlpPingInterval": "How often a connected device is pinged to check it is still online (default: 5)",
+    "lblPingAttempts": "Ping attempts before offline",
+    "hlpPingAttempts": "Number of consecutive failed pings before the device is considered offline (default: 1)"
 }
