@@ -60,7 +60,7 @@ class Esphome extends utils.Adapter {
             // Store settings in global variables
             // defaultApiPass = this.config.apiPass;
             autodiscovery = this.config.autodiscovery;
-            // reconnectInterval = this.config.reconnectInterval * 1000;
+            // reconnectInterval / pingInterval / pingAttempts are read per device in connectDevices()
             createConfigStates = this.config.configStates;
 
             // Ensure all online states are set to false during adapter start
@@ -470,6 +470,13 @@ class Esphome extends utils.Adapter {
             }
             this.updateConnectionStatus(host, false, true, 'connecting');
 
+            // Connection behavior, configurable via adapter settings.
+            // Intervals are stored in seconds in the config and converted to milliseconds here.
+            // Sanitize to sensible minimums to avoid hammering devices with a 0s interval.
+            const reconnectInterval = Math.max(1, Number(this.config.reconnectInterval) || 5) * 1000;
+            const pingInterval = Math.max(1, Number(this.config.pingInterval) || 5) * 1000;
+            const pingAttempts = Math.max(1, Number(this.config.pingAttempts) || 1);
+
             // Generic client settings
             const clientSettings = {
                 host: host,
@@ -480,9 +487,9 @@ class Esphome extends utils.Adapter {
                 initializeSubscribeStates: false,
                 // initializeSubscribeLogs: false, //ToDo: Make configurable by adapter settings
                 reconnect: true,
-                reconnectInterval: 5000,
-                pingInterval: 5000, //ToDo: Make configurable by adapter settings
-                pingAttempts: 1, //ToDo: Make configurable by adapter settings
+                reconnectInterval: reconnectInterval,
+                pingInterval: pingInterval,
+                pingAttempts: pingAttempts,
                 // port: espDevices[device].port //ToDo: Make configurable by adapter settings
             };
 
