@@ -200,6 +200,60 @@
 					"onlyIp4" : true
 				},
 
+				// Header for connection / reconnect behavior of known devices
+				"connectionBehaviorHeader": {
+					"newLine": true,
+					"type": "header",
+					"text": "lblConnectionBehavior",
+					"size": 2
+				},
+
+				// How long to wait before retrying the connection to an offline device (seconds)
+				"reconnectInterval": {
+					"newLine": true,
+					"type": "number",
+					"min": 1,
+					"max": 3600,
+					"xs": 12,
+					"sm": 4,
+					"md": 4,
+					"lg": 3,
+					"xl": 3,
+					"default": 5,
+					"label": "lblReconnectInterval",
+					"help": "hlpReconnectInterval"
+				},
+
+				// How often a connected device is pinged to detect if it is still online (seconds)
+				"pingInterval": {
+					"type": "number",
+					"min": 1,
+					"max": 3600,
+					"xs": 12,
+					"sm": 4,
+					"md": 4,
+					"lg": 3,
+					"xl": 3,
+					"default": 5,
+					"label": "lblPingInterval",
+					"help": "hlpPingInterval"
+				},
+
+				// Number of consecutive failed pings before the device is considered offline
+				"pingAttempts": {
+					"type": "number",
+					"min": 1,
+					"max": 100,
+					"xs": 12,
+					"sm": 4,
+					"md": 4,
+					"lg": 3,
+					"xl": 3,
+					"default": 1,
+					"label": "lblPingAttempts",
+					"help": "hlpPingAttempts"
+				},
+
 				// Text to explain adapter must be running to load this table
 				"details-1": {
 					"newLine": true,

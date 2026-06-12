@@ -395,6 +395,8 @@ If you like my work, please consider a personal donation
 -->
 ### **WORK IN PROGRESS**
 - (copilot) Adapter requires node.js >= 22 now
+- (arteck) NEW: Reconnect interval, ping interval and ping attempts for device connections are now configurable in the adapter settings (Devices tab)
+- (arteck) fix language translations
 
 ### 0.7.0 (2026-05-17)
 * (@SimonFischer04) **FIXED** copilot hallucinations
