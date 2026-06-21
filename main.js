@@ -545,6 +545,22 @@ class Esphome extends utils.Adapter {
                             }
                         }
 
+                        // Clean up entity data objects from clientDetails
+                        for (const key of Object.keys(clientDetails[host])) {
+                            if (
+                                clientDetails[host][key] &&
+                                typeof clientDetails[host][key] === 'object' &&
+                                clientDetails[host][key].entityType
+                            ) {
+                                delete clientDetails[host][key];
+                            }
+                        }
+
+                        // Clean up deviceStateRelation
+                        if (clientDetails[host].deviceName) {
+                            delete this.deviceStateRelation[clientDetails[host].deviceName];
+                        }
+
                         this.log.warn(
                             `ESPHome client ${clientDetails[host].deviceFriendlyName} | ${clientDetails[host].deviceName} | on ${host} disconnected`,
                         );
@@ -904,7 +920,7 @@ class Esphome extends utils.Adapter {
                         }
                     });
 
-                    entity.connection.on(`destroyed`, async state => {
+                    entity.on(`destroyed`, async state => {
                         try {
                             this.log.warn(`Connection destroyed for ${state}`);
                         } catch (e) {
@@ -997,6 +1013,7 @@ class Esphome extends utils.Adapter {
                 clientDetails[host].client.connect();
             } catch (e) {
                 this.log.error(`Client ${host} connect error ${e}`);
+                this.updateConnectionStatus(host, false, false, 'error');
             }
         } catch (e) {
             this.log.error(`ESP device error for ${host} | ${e} | ${e.stack}`);
@@ -1412,7 +1429,7 @@ class Esphome extends utils.Adapter {
      * Handles error messages for log and Sentry
      *
      * @param {string} codepart Function were exception occurred
-     * @param {any} error Error message
+     * @param {Error|string} error Error message
      */
     errorHandler(codepart, error) {
         let errorMsg = error;
