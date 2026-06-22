@@ -922,7 +922,12 @@ class Esphome extends utils.Adapter {
 
                     entity.on(`destroyed`, async state => {
                         try {
-                            this.log.warn(`Connection destroyed for ${state}`);
+                            const entityIdentity = entity?.name || entity?.id || host || 'unknown';
+                            if (state !== undefined) {
+                                this.log.warn(`Connection destroyed for ${state} (${entityIdentity})`);
+                            } else {
+                                this.log.warn(`Connection destroyed for ${entityIdentity}`);
+                            }
                         } catch (e) {
                             this.log.error(`State handle error ${e}`);
                         }
