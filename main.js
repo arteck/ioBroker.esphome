@@ -2138,7 +2138,12 @@ class Esphome extends utils.Adapter {
                     // Skip action
                 }
 
-                const deviceIP = this.deviceStateRelation[device[2]].ip;
+                const deviceName = device[2];
+                if (!this.deviceStateRelation[deviceName]) {
+                    this.log.debug(`[onStateChange] Device ${deviceName} not connected, ignoring state change`);
+                    return;
+                }
+                const deviceIP = this.deviceStateRelation[deviceName].ip;
 
                 // Handle Switch State
                 if (clientDetails[deviceIP][device[4]].type === `Switch`) {
